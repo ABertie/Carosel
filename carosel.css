@@ -24,13 +24,16 @@ body{
 .carosel button{
     font-size: max(2rem, 5vw);
     border: none;
+    border-radius: 50%;
     background-color: transparent;
     color: rgba(0 0 0 /0.75);
+    padding: .1em;
 
     position: absolute;
-    inset: auto;
     z-index: 1;
     justify-self: center;
+
+    display: flex;
 }
 
 .carosel__forwardButton {
