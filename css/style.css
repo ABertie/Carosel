@@ -1,0 +1,35 @@
+@import url(carosel1.css);
+@import url(carosel2.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+div {
+    margin: 5rem 0;
+}
+
+button {
+    font-size: max(2rem, 5vw);
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: rgba(0 0 0 /0.75);
+    padding: .1em;
+
+    position: absolute;
+    z-index: 1;
+    justify-self: center;
+
+    display: flex;
+}
+
+button:hover {
+    color: rgba(0 0 0 /0.5);
+}
