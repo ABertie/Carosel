@@ -2,7 +2,7 @@ const CAROSEL2_IMG = document.querySelector(".carosel2__image");
 const CAROSEL2_FORWARD = document.querySelector(".carosel2__forwardButton");
 const CAROSEL2_BACK = document.querySelector(".carosel2__backButton");
 
-const IMAGES2 = ["img/pexels-karolina-grabowska-4041122.jpg", "img/pexels-mikhail-nilov-6957667.jpg", "img/pexels-mikhail-nilov-6957926.jpg"];
+const IMAGES2 = ["img/pexels-karolina-grabowska-4041122.jpg", "img/pexels-mikhail-nilov-6957667.jpg", "img/pexels-mikhail-nilov-6957926.jpg","img/pexels-jonathan-borba-15560669.jpg","img/pexels-nati-16233384.jpg"];
 
 var index2 = 0;
 CAROSEL2_IMG.src = IMAGES2[index2];
