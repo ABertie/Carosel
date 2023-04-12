@@ -1,7 +1,7 @@
-.carosel3 {
+.carosel4 {
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
-    grid-template-rows: 100%;
+    grid-template-rows: 95% 5%;
     position: relative;
     align-items: center;
 
@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-.carosel3__backButton, .carosel3__forwardButton {
+.carosel4__backButton, .carosel4__forwardButton {
     font-size: max(2rem, 5vw);
     border: none;
     border-radius: 50%;
@@ -24,20 +24,23 @@
     display: flex;
 }
 
-.carosel3__backButton:hover, .carosel3__forwardButton:hover{
+.carosel4__backButton:hover, .carosel4__forwardButton:hover{
     color: rgba(0 0 0 /0.5);
 }
 
-.carosel3__forwardButton {
+.carosel4__forwardButton {
     grid-column: 3/4;
+    grid-row: 1/2;
 }
 
-.carosel3__backButton {
+.carosel4__backButton {
     grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.carosel3__slide {
+.carosel4__slide {
     grid-column: 2/3;
+    grid-row: 1/2;
     width: 100%;
     height: 100%;
     position: relative;
@@ -53,19 +56,41 @@
     --animate-duration: .6s;
 }
 
-.carosel3__slide article, .carosel3__slide section {
+.carosel4__slide article, .carosel4__slide section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.carosel3__slide .full-width{
+.carosel4__slide .full-width{
     margin: 0 10%;
 }
 
-.carosel3__slide > * {
+.carosel4__slide > * {
     width: 100%;
     height: 100%;
+}
+
+.carosel4__spots{
+    grid-column: 1/4;
+    grid-row: 2/3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.carosel4__spots * {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(50 50 50 /0.75);
+    border-radius: 50%;
+    border: 1px solid rgba(50 50 50 /1);
+}
+
+.carosel4__spots *:checked {
+    background-color: rgba(50 50 50 /1);
 }
