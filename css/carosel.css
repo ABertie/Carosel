@@ -1,4 +1,4 @@
-.carosel2 {
+.carosel {
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
     grid-template-rows: 100%;
@@ -7,25 +7,22 @@
 
     height: 90vh;
     width: 100%;
-
 }
 
-.carosel2__forwardButton {
+.carosel__forwardButton {
     grid-column: 3/4;
 }
 
-.carosel2__backButton {
+.carosel__backButton {
     grid-column: 1/2;
 }
 
-.carosel2__image {
+.carosel__image {
     grid-column: 1/4;
     position: relative;
-
-    --animate-duration: .6s;
 }
 
-.carosel2__backButton, .carosel2__forwardButton {
+.carosel__backButton, .carosel__forwardButton {
     font-size: max(2rem, 5vw);
     border: none;
     border-radius: 50%;
@@ -40,6 +37,6 @@
     display: flex;
 }
 
-.carosel2__backButton:hover, .carosel2__forwardButton:hover{
+.carosel__backButton:hover, .carosel__forwardButton:hover{
     color: rgba(0 0 0 /0.5);
 }

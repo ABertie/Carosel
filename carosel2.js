@@ -34,7 +34,7 @@ function disabelAnimation(event) {
         CAROSEL2_IMG.classList.add('animate__fadeInLeftBig')
     } else {
         CAROSEL2_IMG.classList.remove('animate__fadeInLeftBig')
-    }
+    };
     
     if (CAROSEL2_IMG.classList.contains('animate__fadeOutLeftBig')){
         CAROSEL2_IMG.classList.remove('animate__fadeOutLeftBig')
@@ -42,5 +42,5 @@ function disabelAnimation(event) {
         CAROSEL2_IMG.classList.add('animate__fadeInRightBig')
     } else {
         CAROSEL2_IMG.classList.remove('animate__fadeInRightBig')
-    }
-}
+    };
+};

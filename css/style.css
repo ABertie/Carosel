@@ -1,5 +1,6 @@
-@import url(carosel1.css);
+@import url(carosel.css);
 @import url(carosel2.css);
+@import url(carosel3.css);
 
 * {
     margin: 0;
@@ -8,28 +9,28 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    margin: 2rem 0;
+
     overflow-x: hidden;
 }
 
-div {
-    margin: 3rem 0;
+h2 {
+    color: darkslategrey;
+    text-indent: 15vw;
+    border-bottom: 2px solid darkslategrey;
+    margin-top: 5rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 button {
-    font-size: max(2rem, 5vw);
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
-    color: rgba(0 0 0 /0.75);
-    padding: .1em;
-
-    position: absolute;
-    z-index: 1;
-    justify-self: center;
-
-    display: flex;
-}
-
-button:hover {
-    color: rgba(0 0 0 /0.5);
+    font-size: inherit;
 }
