@@ -17,7 +17,6 @@ function shuffleForward2(event) {
         index2 = 0;
     };
     CAROSEL2_IMG.classList.add('animate__fadeOutRightBig')
-    CAROSEL2_IMG.src = IMAGES2[index2];
 };
 
 function shuffleBack2(event) {
@@ -26,19 +25,20 @@ function shuffleBack2(event) {
     }
     index2--;
     CAROSEL2_IMG.classList.add('animate__fadeOutLeftBig')
-    CAROSEL2_IMG.src = IMAGES2[index2];
 };
 
 function disabelAnimation(event) {
     if (CAROSEL2_IMG.classList.contains('animate__fadeOutRightBig')){
         CAROSEL2_IMG.classList.remove('animate__fadeOutRightBig')
+        CAROSEL2_IMG.src = IMAGES2[index2];
         CAROSEL2_IMG.classList.add('animate__fadeInLeftBig')
     } else {
         CAROSEL2_IMG.classList.remove('animate__fadeInLeftBig')
     }
-
+    
     if (CAROSEL2_IMG.classList.contains('animate__fadeOutLeftBig')){
         CAROSEL2_IMG.classList.remove('animate__fadeOutLeftBig')
+        CAROSEL2_IMG.src = IMAGES2[index2];
         CAROSEL2_IMG.classList.add('animate__fadeInRightBig')
     } else {
         CAROSEL2_IMG.classList.remove('animate__fadeInRightBig')
