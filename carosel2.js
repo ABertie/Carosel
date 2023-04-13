@@ -16,7 +16,7 @@ function shuffleForward2(event) {
     if (IMAGES2.length === index2) {
         index2 = 0;
     };
-    CAROSEL2_IMG.classList.add('animate__fadeOutRightBig')
+    CAROSEL2_IMG.classList.add('animate__fadeOutLeftBig')
 };
 
 function shuffleBack2(event) {
@@ -24,7 +24,7 @@ function shuffleBack2(event) {
         index2 = IMAGES2.length;
     }
     index2--;
-    CAROSEL2_IMG.classList.add('animate__fadeOutLeftBig')
+    CAROSEL2_IMG.classList.add('animate__fadeOutRightBig')
 };
 
 function disabelAnimation(event) {

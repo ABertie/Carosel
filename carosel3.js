@@ -22,7 +22,7 @@ function shuffleForward3(event) {
     if (SLIDE3.length === index3) {
         index3 = 0;
     };
-    CAROSEL3_SLIDE.classList.add('animate__fadeOutRightBig')
+    CAROSEL3_SLIDE.classList.add('animate__fadeOutLeftBig')
 };
 
 function shuffleBack3(event) {
@@ -30,7 +30,7 @@ function shuffleBack3(event) {
         index3 = SLIDE3.length;
     }
     index3--;
-    CAROSEL3_SLIDE.classList.add('animate__fadeOutLeftBig')
+    CAROSEL3_SLIDE.classList.add('animate__fadeOutRightBig')
 };
 
 function disabelAnimation3(event) {

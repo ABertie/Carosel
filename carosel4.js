@@ -33,9 +33,9 @@ function highlightButton() {
         };
         button.addEventListener("click", function () {
             if (index4 < i) {
-                CAROSEL4_SLIDE.classList.add('animate__fadeOutRightBig');
-            } else {
                 CAROSEL4_SLIDE.classList.add('animate__fadeOutLeftBig');
+            } else {
+                CAROSEL4_SLIDE.classList.add('animate__fadeOutRightBig');
             }
             index4 = i;
             highlightButton();
@@ -49,7 +49,7 @@ function shuffleForward4() {
     if (SLIDE4.length === index4) {
         index4 = 0;
     };
-    CAROSEL4_SLIDE.classList.add('animate__fadeOutRightBig');
+    CAROSEL4_SLIDE.classList.add('animate__fadeOutLeftBig');
     window.highlightButton();
 };
 
@@ -58,7 +58,7 @@ function shuffleBack4() {
         index4 = SLIDE4.length;
     }
     index4--;
-    CAROSEL4_SLIDE.classList.add('animate__fadeOutLeftBig');
+    CAROSEL4_SLIDE.classList.add('animate__fadeOutRightBig');
     window.highlightButton();
 };
 
