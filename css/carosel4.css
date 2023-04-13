@@ -84,13 +84,17 @@
 }
 
 .carosel4__spot{
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: rgba(50 50 50 /0.75);
+    height: max(1rem, 1.5vh);
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
     border-radius: 50%;
-    border: 1px solid rgba(50 50 50 /1);
+    border: 2px solid rgb(100 100 100/ .3);
 }
 
-.carosel4__spot:checked {
-    background-color: rgba(50 50 50 /1);
+.carosel4__spot:hover{
+    background-color: rgba(50 50 50 /.1);
+}
+
+.highlight {
+    background-color: rgba(50 50 50 /.5);
 }

@@ -1,4 +1,4 @@
-const CAROSEL_IMG = document.querySelector(".carosel__image");
+/* const CAROSEL_IMG = document.querySelector(".carosel__image");
 const CAROSEL_FORWARD = document.querySelector(".carosel__forwardButton");
 const CAROSEL_BACK = document.querySelector(".carosel__backButton");
 
@@ -24,4 +24,4 @@ function shuffleBack(event) {
     }
     index--;
     CAROSEL_IMG.src = IMAGES[index];
-};
+}; */
