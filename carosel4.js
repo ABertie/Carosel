@@ -13,11 +13,22 @@ const SLIDE4 = [
 var index4 = 0;
 CAROSEL4_SLIDE.innerHTML = (SLIDE4[index4]);
 
-CAROSEL4_FORWARD.addEventListener("click", shuffleForward3);
-CAROSEL4_BACK.addEventListener("click", shuffleBack3);
-CAROSEL4_SLIDE.addEventListener("animationend", disabelAnimation3);
+SLIDE4.forEach(element => {
+    const SPOTS = document.querySelector(".carosel4__spots");
+    const CREATESPOT = document.createElement("div");
+    let spot = document.createTextNode("spot")
+    CREATESPOT.classList.add('carosel4__spot');
+    SPOTS.appendChild(CREATESPOT);
+});
 
-function shuffleForward3(event) {
+const SPOT = document.querySelectorAll(".carosel4__spot");
+SPOT.addEventListener("click", shuffleSpot4);
+
+CAROSEL4_FORWARD.addEventListener("click", shuffleForward4);
+CAROSEL4_BACK.addEventListener("click", shuffleBack4);
+CAROSEL4_SLIDE.addEventListener("animationend", disabelAnimation4);
+
+function shuffleForward4(event) {
     index4++;
     if (SLIDE4.length === index4) {
         index4 = 0;
@@ -25,7 +36,7 @@ function shuffleForward3(event) {
     CAROSEL4_SLIDE.classList.add('animate__fadeOutRightBig')
 };
 
-function shuffleBack3(event) {
+function shuffleBack4(event) {
     if (index4 === 0) {
         index4 = SLIDE4.length;
     }
@@ -33,7 +44,7 @@ function shuffleBack3(event) {
     CAROSEL4_SLIDE.classList.add('animate__fadeOutLeftBig')
 };
 
-function disabelAnimation3(event) {
+function disabelAnimation4(event) {
     if (CAROSEL4_SLIDE.classList.contains('animate__fadeOutRightBig')){
         CAROSEL4_SLIDE.classList.remove('animate__fadeOutRightBig')
         CAROSEL4_SLIDE.innerHTML = (SLIDE4[index4]);
@@ -50,3 +61,7 @@ function disabelAnimation3(event) {
         CAROSEL4_SLIDE.classList.remove('animate__fadeInRightBig')
     };
 ;}
+
+function shuffleSpot4(event) {
+    
+}

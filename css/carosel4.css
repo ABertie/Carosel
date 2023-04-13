@@ -83,14 +83,14 @@
     gap: .5rem;
 }
 
-.carosel4__spots * {
-    width: 1rem;
-    height: 1rem;
+.carosel4__spot{
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: rgba(50 50 50 /0.75);
     border-radius: 50%;
     border: 1px solid rgba(50 50 50 /1);
 }
 
-.carosel4__spots *:checked {
+.carosel4__spot:checked {
     background-color: rgba(50 50 50 /1);
 }
